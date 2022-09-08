@@ -17,6 +17,23 @@
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
+"@bpmn-io/element-templates-validator@^0.10.0":
+  "integrity" "sha512-dQFJDCh2u3YhlGW2V/YBe3OaO15Sq4sx6GZYiO/eUK9SCvvD/iwObliHs9Z1LkTzOITel+J8nS5Yoaab+E2QRw=="
+  "resolved" "https://registry.npmjs.org/@bpmn-io/element-templates-validator/-/element-templates-validator-0.10.0.tgz"
+  "version" "0.10.0"
+  dependencies:
+    "@camunda/element-templates-json-schema" "^0.10.1"
+    "@camunda/zeebe-element-templates-json-schema" "^0.6.0"
+    "json-source-map" "^0.6.1"
+    "min-dash" "^3.8.1"
+
+"@bpmn-io/extract-process-variables@^0.5.0":
+  "integrity" "sha512-Kx0zknI9GRli1EDkgmkUV34cKYsqppsgbcnfrSaT2Tmh7CGXEo8b6UzuGFlZtCZt4488UxjP7UhdrONTt5Si/A=="
+  "resolved" "https://registry.npmjs.org/@bpmn-io/extract-process-variables/-/extract-process-variables-0.5.1.tgz"
+  "version" "0.5.1"
+  dependencies:
+    "min-dash" "^3.8.1"
+
 "@bpmn-io/feel-editor@0.3.0":
   "integrity" "sha512-TPDDc2vCALrMletpBos+jM7d96Qp+RWEa3D95H/4EbbDr3+kyqjUy1Omp/+yQGC4a5ryBRrEwAGHbkoAPwwbIQ=="
   "resolved" "https://registry.npmjs.org/@bpmn-io/feel-editor/-/feel-editor-0.3.0.tgz"
@@ -41,6 +58,16 @@
     "diagram-js" "^8.9.0"
     "min-dash" "^3.8.1"
     "min-dom" "^3.2.1"
+
+"@camunda/element-templates-json-schema@^0.10.1":
+  "integrity" "sha512-sw8RNecjQgY7tX26PMLRJGNX/2QCnlwCvZfxQWh606qlJZsLbpvEbvfgIGCRoYlHYTlsP6PxVcWYx5LPo7yisg=="
+  "resolved" "https://registry.npmjs.org/@camunda/element-templates-json-schema/-/element-templates-json-schema-0.10.1.tgz"
+  "version" "0.10.1"
+
+"@camunda/zeebe-element-templates-json-schema@^0.6.0":
+  "integrity" "sha512-qawIFM52lp1hW2vWrHaX8ywguZsp2olE0DRTHUY+KWH5GwszZwGWECP3tji1KVih2TasQyf28kcQVh8TeQ6dAg=="
+  "resolved" "https://registry.npmjs.org/@camunda/zeebe-element-templates-json-schema/-/zeebe-element-templates-json-schema-0.6.0.tgz"
+  "version" "0.6.0"
 
 "@codemirror/autocomplete@^6.0.3":
   "integrity" "sha512-wtO4O5WDyXhhCd4q4utDIDZxnQfmJ++3dGBCG9LMtI79+92OcA1DVk/n7BEupKmjIr8AzvptDz7YQ9ud6OkU+A=="
@@ -322,6 +349,11 @@
     "get-intrinsic" "^1.1.1"
     "is-string" "^1.0.7"
 
+"array-move@^3.0.1":
+  "integrity" "sha512-H3Of6NIn2nNU1gsVDqDnYKY/LCdWvCMMOWifNGhKcVQgiZ6nOek39aESOvro6zmueP07exSl93YLvkN4fZOkSg=="
+  "resolved" "https://registry.npmjs.org/array-move/-/array-move-3.0.1.tgz"
+  "version" "3.0.1"
+
 "array-union@^2.1.0":
   "integrity" "sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw=="
   "resolved" "https://registry.npmjs.org/array-union/-/array-union-2.1.0.tgz"
@@ -367,7 +399,22 @@
   "resolved" "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
   "version" "1.0.2"
 
-"bpmn-js@^9.4.1":
+"bpmn-js-properties-panel@^1.6.1":
+  "integrity" "sha512-DnR/FVvh9d7HsMugfHN/ZrEsLICCxykamrfd7FzF2//vQP9VYJtWncxLn/4KPIGxNHmjNBYMfRg6RDpaw+sWaw=="
+  "resolved" "https://registry.npmjs.org/bpmn-js-properties-panel/-/bpmn-js-properties-panel-1.6.1.tgz"
+  "version" "1.6.1"
+  dependencies:
+    "@bpmn-io/element-templates-validator" "^0.10.0"
+    "@bpmn-io/extract-process-variables" "^0.5.0"
+    "array-move" "^3.0.1"
+    "classnames" "^2.3.1"
+    "ids" "^1.0.0"
+    "min-dash" "^3.8.1"
+    "min-dom" "^3.1.3"
+    "preact-markup" "^2.1.1"
+    "semver-compare" "^1.0.0"
+
+"bpmn-js@^9.4.1", "bpmn-js@8.x || 9.x", "bpmn-js@9.x":
   "integrity" "sha512-uid1EctbT0c3dO5+Ghm9Qu8EQCSVjZS1Ff7z9qQ0ZoxRWayvbWaHUYSVdKlzXZi7911Pe7rkSqCuXpQ68ouPRw=="
   "resolved" "https://registry.npmjs.org/bpmn-js/-/bpmn-js-9.4.1.tgz"
   "version" "9.4.1"
@@ -419,6 +466,19 @@
   "integrity" "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ=="
   "resolved" "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz"
   "version" "3.1.0"
+
+"camunda-bpmn-js-behaviors@0.2.x":
+  "integrity" "sha512-pIaSLBUfJSObCBvfH2WHPTzZbdW4rV0vN4PObyXX1iqy0idKy2uJURQj/lLy7cGmZAWO4GVpDuco8+f8WzH9HA=="
+  "resolved" "https://registry.npmjs.org/camunda-bpmn-js-behaviors/-/camunda-bpmn-js-behaviors-0.2.0.tgz"
+  "version" "0.2.0"
+  dependencies:
+    "ids" "^1.0.0"
+    "min-dash" "^3.8.1"
+
+"camunda-bpmn-moddle@7.x":
+  "integrity" "sha512-Br8Diu6roMpziHdpl66Dhnm0DTnCFMrSD9zwLV08LpD52QA0UsXxU87XfHf08HjuB7ly0Hd1bvajZRpf9hbmYQ=="
+  "resolved" "https://registry.npmjs.org/camunda-bpmn-moddle/-/camunda-bpmn-moddle-7.0.1.tgz"
+  "version" "7.0.1"
 
 "caniuse-lite@^1.0.30001332":
   "integrity" "sha512-sS4CaUM+/+vqQUlCvCJ2WtDlV81aWtHhqeEVkLokVJJa3ViN4zDxAGfq9R8i1m90uGHxo99cy10Od+lvn3hf0g=="
@@ -531,7 +591,7 @@
     "min-dash" "^3.5.2"
     "min-dom" "^3.1.3"
 
-"diagram-js@^0.x || ^1.x || ^2.x || ^3.x || ^4.x || ^5.x || ^6.x || ^7.x || ^8.x", "diagram-js@^8.9.0":
+"diagram-js@^0.x || ^1.x || ^2.x || ^3.x || ^4.x || ^5.x || ^6.x || ^7.x || ^8.x", "diagram-js@^8.9.0", "diagram-js@7.x || 8.x":
   "integrity" "sha512-577bUEbkwZ7id4SCXcD2qrlKoRPXry2SDSPt5T6tEOjwKrTllKr5d1HZoJzGws4VMQq5fmY51Gce1iFT9S4Dlw=="
   "resolved" "https://registry.npmjs.org/diagram-js/-/diagram-js-8.9.0.tgz"
   "version" "8.9.0"
@@ -1233,6 +1293,11 @@
   "resolved" "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz"
   "version" "0.4.1"
 
+"json-source-map@^0.6.1":
+  "integrity" "sha512-1QoztHPsMQqhDq0hlXY5ZqcEdUzxQEIxgFkKl4WUp2pgShObl+9ovi4kRh2TfvAfxAoHOJ9vIMEqk3k4iex7tg=="
+  "resolved" "https://registry.npmjs.org/json-source-map/-/json-source-map-0.6.1.tgz"
+  "version" "0.6.1"
+
 "json-stable-stringify-without-jsonify@^1.0.1":
   "integrity" "sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw=="
   "resolved" "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
@@ -1573,6 +1638,16 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
 
+"preact-markup@^2.1.1":
+  "integrity" "sha512-8JL2p36mzK8XkspOyhBxUSPjYwMxDM0L5BWBZWxsZMVW8WsGQrYQDgVuDKkRspt2hwrle+Cxr/053hpc9BJwfw=="
+  "resolved" "https://registry.npmjs.org/preact-markup/-/preact-markup-2.1.1.tgz"
+  "version" "2.1.1"
+
+"preact@>=10":
+  "integrity" "sha512-w0mCL5vICUAZrh1DuHEdOWBjxdO62lvcO++jbzr8UhhYcTbFkpegLH9XX+7MadjTl/y0feoqwQ/zAnzkc/EGog=="
+  "resolved" "https://registry.npmjs.org/preact/-/preact-10.10.6.tgz"
+  "version" "10.10.6"
+
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
   "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
@@ -1689,6 +1764,11 @@
   "version" "0.23.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"semver-compare@^1.0.0":
+  "integrity" "sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow=="
+  "resolved" "https://registry.npmjs.org/semver-compare/-/semver-compare-1.0.0.tgz"
+  "version" "1.0.0"
 
 "semver@^6.3.0":
   "integrity" "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
@@ -1929,3 +2009,8 @@
   "integrity" "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="
   "resolved" "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
   "version" "0.1.0"
+
+"zeebe-bpmn-moddle@0.15.x":
+  "integrity" "sha512-cgn6bjkjrtOGcRumrgWnT1J93wTKmnFlSGGuwGXjF7pOksPF28ssbKiwKVMU6IXHnBDIVLQdf8fVNZn7JiBtQQ=="
+  "resolved" "https://registry.npmjs.org/zeebe-bpmn-moddle/-/zeebe-bpmn-moddle-0.15.0.tgz"
+  "version" "0.15.0"

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import "bpmn-js/dist/assets/diagram-js.css";
 import "bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css";
+import "bpmn-js-properties-panel/dist/assets/properties-panel.css";
 
 let modeler;
 
@@ -10,14 +11,8 @@ const ReactEditor = () => {
     (async () => {
       const BpmnModeler = (await import("bpmn-js/lib/Modeler")).default;
 
-      const BpmnPropertiesPanelModule = await import(
-        "@bpmn-io/properties-panel"
-      );
-
-      const additionalModules = [];
-
-      Object.values(BpmnPropertiesPanelModule).forEach((mod) =>
-        additionalModules.push(mod)
+      const BpmnPropertiesPanelModules = await import(
+        "bpmn-js-properties-panel"
       );
 
       if (!modeler)
@@ -26,7 +21,10 @@ const ReactEditor = () => {
           propertiesPanel: {
             parent: "#properties",
           },
-          additionalModules,
+          additionalModules: [
+            BpmnPropertiesPanelModules.BpmnPropertiesPanelModule,
+            BpmnPropertiesPanelModules.BpmnPropertiesProviderModule,
+          ],
         });
     })();
 
